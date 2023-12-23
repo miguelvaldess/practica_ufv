@@ -25,7 +25,7 @@ class ListadoCasosCOVID(BaseModel):
 
 @app.get("/retrieve_data/")
 async def retrieve_data():
-    file_path = "casos_diagnostico_ccaa.csv"
+    file_path = "./casos_diagnostico_ccaa.csv"
     df_covid = pd.read_csv(file_path)
     datos_covid = df_covid.to_dict(orient='records')
     listado_covid = ListadoCasosCOVID(casos=datos_covid)

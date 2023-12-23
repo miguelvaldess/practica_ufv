@@ -22,7 +22,7 @@ def mostrar_descripcion():
 
 
     # URL del FastAPI
-    api_url = 'http://127.0.0.1:8000/retrieve_data'
+    api_url = 'http://fastapi:8000/retrieve_data'
 
     # Haciendo la solicitud al FastAPI para obtener los datos de casos COVID-19
     df_covid = load_data(api_url)

@@ -29,7 +29,7 @@ st.set_page_config(page_title='Práctica COVID19', page_icon=':microbe:', layout
 page = st.sidebar.selectbox("Seleccionar Página", ["Inicio", "Descripción", "Análisis", "Dashboard", "Observaciones"])
 
 # URL del FastAPI
-api_url = 'http://127.0.0.1:8000/retrieve_data'
+api_url = 'http://fastapi:8000/retrieve_data'
 
 # Haciendo la solicitud al FastAPI para obtener los datos de casos COVID-19
 df_covid = load_data(api_url)
